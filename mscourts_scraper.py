@@ -141,4 +141,3 @@ def scrape_court_reports():
             i += 1
             airtab.insert(this_dict)
     wrap_it_up(t0, new=i, total=len(rows), function='scrape_msaoc_reports')
-
