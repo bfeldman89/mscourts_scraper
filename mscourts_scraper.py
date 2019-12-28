@@ -3,7 +3,7 @@
 import time
 import requests
 from bs4 import BeautifulSoup
-from ..jail_scrapers.common import airtab_courts as airtab, muh_headers, wrap_from_module
+from common import airtab_courts as airtab, muh_headers, wrap_from_module
 
 
 wrap_it_up = wrap_from_module('mscourts_scraper.py')
