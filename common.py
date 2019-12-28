@@ -45,6 +45,10 @@ cloudinary.config(cloud_name='bfeldman89',
 
 muh_headers = {'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'}
 
+my_funcs = {'scrape_court_news': 'receET4GbZsIHZ1ap',
+            'scrape_court_newsletters': 'recl93NdV0nvxiP6B',
+            'scrape_court_reports': 'rec6iaRXOshuZ3OwY'
+            }
 
 def wrap_from_module(module):
     def wrap_it_up(t0, new=None, total=None, function=None):
