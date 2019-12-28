@@ -51,6 +51,7 @@ def wrap_from_module(module):
         this_dict = {
             'module': module,
             'function': function,
+            '_function': my_funcs[function],
             'duration': round(time.time() - t0, 2),
             'total': total,
             'new': new
