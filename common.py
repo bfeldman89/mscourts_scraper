@@ -8,15 +8,15 @@ import cloudinary
 from documentcloud import DocumentCloud
 
 
-airtab_log = Airtable(base_key=os.environ['log_db'],
+airtab_log = Airtable(os.environ['log_db'],
                       table_name='log',
                       api_key=os.environ['AIRTABLE_API_KEY'])
 
-airtab_courts = Airtable(base_key=os.environ['other_scrapers_db'],
+airtab_courts = Airtable(os.environ['other_scrapers_db'],
                          table_name='courts',
                          api_key=os.environ['AIRTABLE_API_KEY'])
 
-airtab_tweets = Airtable(base_key=os.environ['botfeldman89_db'],
+airtab_tweets = Airtable(os.environ['botfeldman89_db'],
                          table_name='scheduled_tweets',
                          api_key=os.environ['AIRTABLE_API_KEY'])
 
