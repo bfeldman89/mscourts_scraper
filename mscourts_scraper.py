@@ -104,7 +104,7 @@ def scrape_court_newsletters():
 
 def get_full_news_release():
     t0, i = time.time(), 0
-    records = airtab.get_all(formula="AND(type = 'news', yr = '2019', full_text = '')")
+    records = airtab.all(formula="AND(type = 'news', yr = '2019', full_text = '')")
     print(len(records))
     for record in records:
         r = requests.get(record['fields']['url'], headers=muh_headers)
